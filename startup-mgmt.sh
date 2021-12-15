@@ -12,7 +12,7 @@ if [[ $SPOTIFY_PROXY_API_TOKEN != "" ]]; then
 fi
 sleep 3
 
-if [ $SPOTIFY_PROXY_API_KEY == "" ]; then
+if [ $SPOTIFY_PROXY_API_KEY != "" ]; then
   echo "APIKey:   $SPOTIFY_PROXY_API_KEY"
 else
   echo "warning: No defined proxy API key. This may break your terraform plan and"
